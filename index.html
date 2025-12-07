@@ -686,7 +686,7 @@
 
                         Love Story
                     </h2>
-
+                    <p class="uk-text-center">Chúng tôi gặp nhau vào một ngày rất bình thường, nhưng từ khoảnh khắc đó, mọi điều trong cuộc sống bỗng trở nên đặc biệt.Từ những điều giản dị nhất, chúng tôi tìm thấy sự đồng điệu, và hôm nay, chúng tôi chọn nắm tay nhau đi tiếp quãng đường còn lại</p>
 
                 </div>
 
@@ -695,7 +695,7 @@
                                             <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
 
                             <div class="timeline-media">
-                                <img src="images/9SBYKWAqPi1upSlrVpVOVS6TpVeEnC7FSzgnAgWx.jpg" alt="" class="timline-img">
+                                <img src="images/6ce687e3-aa2c-4ca1-8c83-0ae45217df95.jpg" alt="" class="timline-img">
                             </div>
 
                             <div class="timeline-body">
@@ -826,7 +826,71 @@
 
     <!-- LỜI CHÚC -->
     <!-- TIN NHẮN -->
-    
+    <section id="message" class="section-message uk-background-cover uk-section" style="background-image:url(images/Q8N4jj3wiCbPo5Wnfr72ogZKifiUhbmHoKN9V9UV.jpg); display:block;margin-top:100px;">
+        <div class="uk-position-cover uk-overlay uk-overlay-primary" style="opacity:.5"> </div>
+        <div class="message-container container uk-position-relative uk-position-z-index">
+           
+            <div class="list_message">
+                <!-- <div class="message-item" data-aos="fade-up" data-aos-duration="2000">
+            <i class='bx bxs-quote-alt-left'></i>
+            <h3 class="user_message">Phương Nguyễn</h3>
+            <p class="message_body">Chúc bạn thân của tao lấy một chồng, đẻ hai con đủ nếp đủ tẻ, sống ở nhà ba tầng,
+              mua xe 4 bánh nhé. Phải thật hạnh phúc mày nhé! Hi hi.</p>
+          </div> -->
+            </div>
+
+            <div class="uk-padding-small uk-border-rounded blur-bg" style="border:1px solid white">
+
+                <h3 class="form-title" style="color:white">Gửi lời chúc</h3>
+                <form action="" id="customForm">
+                    <div class="input-group uk-margin-top" style="color:white">
+                        <label for="">
+                            Tên của bạn </label>
+                        <input style="border:1px solid white" id="ten" type="text" class="input blur-bg" value="" required="">
+                    </div>
+                    <div class="input-group uk-margin-top">
+                        <label for="" style="color:white">
+                            Lời chúc </label>
+                            <input style="border:1px solid white" type="text" id="messages" class="input blur-bg" required="">
+                            <label for="" style="color:white">
+                                Xác nhận tham dự </label>
+                                <input style="border:1px solid white" type="text" id="accept" class="input blur-bg" required="">
+                    </div>
+                    <button type="submit" class="btn btn-primary send_message uk-margin-top" style="color:white">Gửi
+                        lời chúc</button>
+                </form>
+                <p style="margin-top:10px;" id="status"></p>
+                <a href="https://docs.google.com/spreadsheets/d/1csmv9WobWTlu_mBJWXn9I9x03G34pbTdY4T_Lqt-xlY/edit?usp=sharing" style="color:white">Xem lời chúc</a>
+            </div>
+
+            <script>
+                document.getElementById("customForm").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    let name = document.getElementById("ten").value;
+                    let message = document.getElementById("messages").value;
+                    let accept = document.getElementById("accept").value;         
+                    // Thay thế bằng URL Google Form của bạn
+                    let googleFormURL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSei-YsHrKMPvt2kSWjZEr3bcD0m6jkd6ajWLfcb7urfXnjZQA/formResponse";
+                    // Các entry ID (tìm trong Google Form)
+                    let formData = new FormData();
+                    formData.append("entry.1135791723", name); 
+                    formData.append("entry.157611106", message); 
+                    formData.append("entry.1745178727", accept);
+        
+                    fetch(googleFormURL, {
+                        method: "POST",
+                        body: formData,
+                        mode: "no-cors"
+                    }).then(() => {
+                        document.getElementById("status").innerText = "Gửi thành công!";
+                        document.getElementById("customForm").reset();
+                    }).catch(error => {
+                        document.getElementById("status").innerText = "Có lỗi xảy ra!";
+                    });
+                });
+            </script>
+        </div>
+    </section>
     <!-- END TIN NHẮN -->
     <script>
         fetch('/wp-json/wp/v2/comments?post=999&per_page=100', {
@@ -933,7 +997,8 @@
         <img src="images/kEvxJeOIsRCObjNKImyiitfgcB10jqnG2CBgrvYF.jpg" alt="" class="thankyou-bg thankyou_img" style="object-position:">
         <div class="thankyou-body container uk-position-relative uk-position-z-index">
             <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up" data-aos-duration="2500">Thank you!</h2>
-            <p data-aos="fade-down" data-aos-duration="3000">Sự hiện diện của mọi người là niềm vui và vinh hạnh cho gia đình
+            <p data-aos="fade-down" data-aos-duration="3000">💖Cảm ơn những người thân yêu, bạn bè, đồng nghiệp .Dù ai cũng có những bận rộn riêng, mọi người  vẫn dành thời gian quý giá đến chung vui và chúc phúc  trong ngày trọng đại của chúng tôi .
+ 💖Sự hiện diện của các bạn là niềm hạnh phúc và trân quý nhất đối với chúng tôi
             </p>
 
 
